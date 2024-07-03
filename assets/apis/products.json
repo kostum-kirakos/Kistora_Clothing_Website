@@ -21,7 +21,7 @@
         "isNew": true,
         "isTrending": true,
         "category": "men",
-        "link": "https://chatgpt.com/"
+        "link": "https://www.amazon.com/dp/B0D88QWMHT"
     },
     {
         "id": 3,
@@ -33,7 +33,7 @@
         "isNew": true,
         "isTrending": false,
         "category": "men",
-        "link": "https://github.com/kostum-kirakos/Kistora_Clothing_Website"
+        "link": "https://www.amazon.com/dp/B0D82NNTRK"
     },
     {
         "id": 4,
@@ -45,7 +45,7 @@
         "isNew": true,
         "isTrending": false,
         "category": "women",
-        "link": "https://intranet.alxswe.com/"
+        "link": "https://www.amazon.com/dp/B0D82D1Z8V"
     },
     {
         "id": 5,
@@ -57,7 +57,7 @@
         "isNew": false,
         "isTrending": false,
         "category": "men",
-        "link": "https://intranet.alxswe.com/"
+        "link": "https://www.amazon.com/dp/B0D88Z7NFC"
     },
     {
         "id": 6,
@@ -69,7 +69,7 @@
         "isNew": true,
         "isTrending": false,
         "category": "men",
-        "link": "https://intranet.alxswe.com/"
+        "link": "https://www.amazon.com/dp/B0D89GNRYD"
     },
     {
         "id": 7,
@@ -81,7 +81,7 @@
         "isNew": false,
         "isTrending": false,
         "category": "men",
-        "link": "https://intranet.alxswe.com/"
+        "link": "https://www.amazon.com/dp/B0D8N1W6MR"
     },
     {
         "id": 8,
@@ -93,7 +93,7 @@
         "isNew": true,
         "isTrending": false,
         "category": "women",
-        "link": "https://intranet.alxswe.com/"
+        "link": "https://www.amazon.com/dp/B0D8MVJK8Y"
     },
     {
         "id": 9,
@@ -105,7 +105,7 @@
         "isNew": false,
         "isTrending": false,
         "category": "women",
-        "link": "https://intranet.alxswe.com/"
+        "link": "https://www.amazon.com/dp/B0D8N24MMF"
     },
     {
         "id": 10,
@@ -117,7 +117,7 @@
         "isNew": false,
         "isTrending": true,
         "category": "women",
-        "link": "https://intranet.alxswe.com/"
+        "link": "https://www.amazon.com/dp/B0D8N24MMF"
     },
     {
         "id": 11,
@@ -129,7 +129,7 @@
         "isNew": false,
         "isTrending": false,
         "category": "women",
-        "link": "https://intranet.alxswe.com/"
+        "link": "https://www.amazon.com/dp/B0D8N338QC"
     },
     {
         "id": 12,
@@ -142,7 +142,7 @@
         "isNew": true,
         "isTrending": false,
         "category": "men",
-        "link": "https://intranet.alxswe.com/"
+        "link": "https://www.amazon.com/dp/B0CWJTPJ6G"
     },
     {
         "id": 13,
@@ -155,7 +155,7 @@
         "isNew": true,
         "isTrending": false,
         "category": "women",
-        "link": "https://intranet.alxswe.com/"
+        "link": "https://www.amazon.com/dp/B0D8245KQZ"
     },
     {
         "id": 14,
