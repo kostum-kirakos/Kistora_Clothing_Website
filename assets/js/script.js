@@ -114,4 +114,25 @@ async function renderNewProducts() {
     /* ScrollReveal JS */
     sr.reveal(newContent);
 }
+/* ============== Shop Section ============== */
+
+async function renderShopProducts() {
+    const respone = await fetch(API_URL);
+    const data = await respone.json();
+    data.map((product) => {
+        shopContent.innerHTML += ProductCard(product);
+    });
+    const productCards = shopContent.querySelectorAll(".product-card");
+    productCards.forEach((product) => {
+        product.classList.add("shop__product");
+        const image = product.querySelector("img");
+        product.addEventListener("mouseover", () => {
+            if (product.dataset.image2 != "undefined") {
+                image.src = product.dataset.image2;
+            }
+        });
+        product.addEventListener("mouseleave", () => {
+            image.src = product.dataset.image1;
+        });
+    });
 
