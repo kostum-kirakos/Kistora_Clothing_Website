@@ -187,3 +187,20 @@ sr.reveal(".brands__logo", { interval: 100 });
 
 /* ScrollReveal JS */
 sr.reveal(".footer__col", { interval: 100 });
+
+/* ============== Active Scroll ============== */
+
+function activeScroll() {
+    const scrollY = window.scrollY;
+    sections.forEach((section) => {
+        const sectionTop = section.offsetTop - 16,
+            sectionHeight = section.offsetHeight,
+            link = document.querySelector(`.header__link a[href='#${section.id}'`);
+        if (scrollY >= sectionTop && scrollY <= sectionHeight + sectionTop) {
+            link.classList.add("active");
+        } else {
+            link.classList.remove("active");
+        }
+    });
+}
+
