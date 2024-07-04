@@ -178,4 +178,12 @@ async function renderTrendingProducts() {
     /* ScrollReveal JS */
     sr.reveal(trendingContent);
 }
+/* ============== Brands Section ============== */
 
+/* ScrollReveal JS */
+sr.reveal(".brands__logo", { interval: 100 });
+
+/* ============== Footer ============== */
+
+/* ScrollReveal JS */
+sr.reveal(".footer__col", { interval: 100 });
