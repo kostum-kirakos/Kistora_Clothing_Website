@@ -165,5 +165,17 @@ async function renderTrendingProducts() {
             trendingContent.innerHTML += TrendingCard(product);
         }
     });
+    /* Swiper JS */
+    const trendingSectionSwiper = new Swiper(".trending__content", {
+        loop: true,
+        effect: "fade",
+        speed: 600,
+        allowTouchMove: false,
+        autoplay: {
+            delay: 6000,
+        },
+    });
+    /* ScrollReveal JS */
+    sr.reveal(trendingContent);
 }
 
