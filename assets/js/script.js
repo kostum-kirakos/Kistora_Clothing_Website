@@ -62,4 +62,27 @@ circleText.innerHTML = circleText.textContent
     .map((char, index) => `<span style="transform: rotate(${index * 28.3}deg)">${char}</span>`)
     .join("");
 
+/* ============== New Section ============== */
+
+async function renderNewProducts() {
+    const respone = await fetch(API_URL);
+    const data = await respone.json();
+    data.map((product) => {
+        if (product.isNew) {
+            newContent.innerHTML += ProductCard(product);
+        }
+    });
+    const productCards = newContent.querySelectorAll(".product-card");
+    productCards.forEach((product) => {
+        product.classList.add("new__product");
+        const image = product.querySelector("img");
+        product.addEventListener("mouseover", () => {
+            if (product.dataset.image2 != "undefined") {
+                image.src = product.dataset.image2;
+            }
+        });
+        product.addEventListener("mouseleave", () => {
+            image.src = product.dataset.image1;
+        });
+    });
 
