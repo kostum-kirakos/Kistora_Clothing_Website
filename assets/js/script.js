@@ -28,3 +28,28 @@ function changeHeaderBg() {
         navBar.style.backgroundColor = "transparent";
     }
 }
+
+/* ============== Home Section ============== */
+
+/* Swiper JS */
+
+const homeSwiper = new Swiper(".home__content", {
+    loop: true,
+    effect: "fade",
+    speed: 2000,
+    allowTouchMove: false,
+    autoplay: {
+        delay: 6000,
+        disableOnInteraction: false,
+    },
+});
+
+homeSwiper.on("slideChange", () => {
+    const activeSlide = homeSwiper.slides[homeSwiper.activeIndex];
+    activeSlide.classList.add("reveal");
+});
+
+homeSwiper.on("slideChangeTransitionEnd", () => {
+    const prevSlide = homeSwiper.slides[homeSwiper.previousIndex];
+    prevSlide.classList.remove("reveal");
+});
