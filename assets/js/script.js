@@ -135,4 +135,5 @@ async function renderShopProducts() {
             image.src = product.dataset.image1;
         });
     });
+}
 
