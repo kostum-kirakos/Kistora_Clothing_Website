@@ -155,3 +155,15 @@ shopCategories.forEach((category) => {
     });
 });
 
+/* ============== Trending Section ============== */
+
+async function renderTrendingProducts() {
+    const respone = await fetch(API_URL);
+    const data = await respone.json();
+    data.map((product) => {
+        if (product.isTrending) {
+            trendingContent.innerHTML += TrendingCard(product);
+        }
+    });
+}
+
