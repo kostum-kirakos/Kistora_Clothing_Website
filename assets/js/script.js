@@ -139,3 +139,19 @@ async function renderShopProducts() {
     sr.reveal(".shop__product", { interval: 100 });
 }
 
+/* Shop categories */
+shopCategories.forEach((category) => {
+    category.addEventListener("click", () => {
+        shopCategories.forEach((category) => category.classList.remove("selected"));
+        category.classList.add("selected");
+        let categoryType = category.dataset.category;
+        const shopProducts = document.querySelectorAll(".shop__product");
+        shopProducts.forEach((product) => {
+            product.classList.add("hide");
+            if (product.dataset.category === categoryType || categoryType === "all") {
+                product.classList.remove("hide");
+            }
+        });
+    });
+});
+
