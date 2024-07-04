@@ -85,4 +85,33 @@ async function renderNewProducts() {
             image.src = product.dataset.image1;
         });
     });
+    /* Swiper JS */
+    const newSwiper = new Swiper(".new__content", {
+        slidesPerView: 4,
+        spaceBetween: 20,
+        loop: true,
+        grabCursor: true,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+            0: {
+                slidesPerView: 1,
+            },
+            768: {
+                slidesPerView: 2,
+            },
+            992: {
+                slidesPerView: 3,
+            },
+            1200: {
+                slidesPerView: 4,
+            },
+        },
+    });
+
+    /* ScrollReveal JS */
+    sr.reveal(newContent);
+}
 
