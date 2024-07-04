@@ -216,3 +216,18 @@ function showScrollUpBtn() {
 
 scrollUpBtn.addEventListener("click", () => window.scrollTo({ behavior: "smooth", top: 0, left: 0 }));
 
+/* ============== Call functions ============== */
+
+window.addEventListener("scroll", () => {
+    activeScroll();
+    changeHeaderBg();
+    showScrollUpBtn();
+});
+
+window.addEventListener("load", () => {
+    activeScroll();
+    renderNewProducts();
+    renderShopProducts();
+    renderTrendingProducts();
+    document.querySelector(".home__slide").classList.add("reveal");
+});
