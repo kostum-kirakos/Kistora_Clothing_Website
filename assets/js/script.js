@@ -16,3 +16,15 @@ const API_URL = "../assets/apis/products.json";
 // initialize Scroll Reveal
 const sr = ScrollReveal({ origin: "top", distance: "100px", duration: 2000, delay: 300 });
 
+/* ============== Header ============== */
+
+navBtn.addEventListener("click", () => document.body.classList.toggle("menu-toggled"));
+
+function changeHeaderBg() {
+    const scrollY = window.scrollY;
+    if (scrollY > 100) {
+        navBar.style.backgroundColor = "var(--white-100-opcty-212)";
+    } else {
+        navBar.style.backgroundColor = "transparent";
+    }
+}
