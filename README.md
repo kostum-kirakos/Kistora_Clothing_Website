@@ -10,7 +10,8 @@ Building a Clothing Website using **HTML**, **CSS** & **JavaScript**.
 * Fetch products from API
 * Used Scroll Reveal JS
 * Used Swiper JS
-(1.png)
-(2.png)
-(3.png)
-(4.png)
+* 
+![Screen](/1.png)
+![Screen](/2.png)
+![Screen](/3.png)
+![Screen](/4.png)
